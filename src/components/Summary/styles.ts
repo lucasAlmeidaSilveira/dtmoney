@@ -25,8 +25,8 @@ export const Container = styled.div`
       font-weight: 500;
       line-height: 3rem;
     }
-
-    &.highlight-background {
+    
+    &:last-child{
       background: var(--green);
       color: #FFF
     }
