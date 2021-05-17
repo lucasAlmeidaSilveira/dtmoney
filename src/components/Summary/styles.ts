@@ -12,13 +12,16 @@ export const Container = styled.div`
     border-radius: 0.25rem;
     color: var(--text-title);
 
-    transition: border-left .2s;
+    transition: border-left .2s, transform .2s;
 
     &:nth-child(1):hover{
       border-left: .4rem solid var(--green);
     }
     &:nth-child(2):hover{
       border-left: .4rem solid var(--red);
+    }
+    &:nth-child(3):hover{
+      transform: scale(1.04)
     }
 
     header {
