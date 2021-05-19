@@ -15,13 +15,13 @@ export const Container = styled.div`
     transition: border-left .2s, transform .2s;
 
     &:nth-child(1):hover{
-      border-left: .4rem solid var(--green);
+      border-left: .5rem solid var(--green);
     }
     &:nth-child(2):hover{
-      border-left: .4rem solid var(--red);
+      border-left: .5rem solid var(--red);
     }
     &:nth-child(3):hover{
-      transform: scale(1.04)
+      border-left: .5rem solid var(--background);
     }
 
     header {
