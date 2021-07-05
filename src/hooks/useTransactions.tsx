@@ -32,6 +32,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     api('http://localhost:3000/api/transactions').then(response =>
       setTransactions(response.data.transactions),
     );
+    
   }, []);
 
   async function createTransaction(transactionInput: TransactionInput) {
