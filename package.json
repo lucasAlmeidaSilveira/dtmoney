@@ -2,51 +2,45 @@
   "name": "dtmoney",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "json-server db.json -p 3000 -w -d 500",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx --fix"
+  },
   "dependencies": {
+    "@testing-library/dom": "^10.4.0",
     "axios": "^0.21.1",
     "miragejs": "^0.1.41",
     "polished": "^4.1.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.3.1",
     "react-modal": "^3.13.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-async-generator-functions": "^7.20.7",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-syntax-export-namespace-from": "^7.8.3",
+    "@babel/preset-env": "^7.26.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/node": "^16.0.0",
     "@types/react-modal": "^3.12.0",
-    "@types/styled-components": "^5.1.9",
-    "typescript": "^4.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.33.0",
+    "json-server": "^0.17.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
   }
 }

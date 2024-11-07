@@ -29,7 +29,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
 
   useEffect(() => {
-    api('http://localhost:3000/api/transactions').then(response =>
+    api('http://localhost:5173/api/transactions').then(response =>
       setTransactions(response.data.transactions),
     );
     
